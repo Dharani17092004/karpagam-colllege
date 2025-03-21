@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+}
+
+:root {
+    --Primary:#e52165;
+    --Primary-light: #e52166b4;
+    --Secondary-light:#0d113732;
+    --Secondary:#0d1137;
+}
+
+::selection {
+    background-color:  var(--Primary);
+    color: var(--Secondary);
+}
+
+
+
+
+
+
+
+
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: 50%;
+    margin-top: 35px;
+    
+}
+header {
+    min-height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.247),rgba(0, 0, 0, 0.542)),url(karp1.jpg);
+    background-size: cover;
+    background-position: right;
+    
+}
+.header-content{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height:150px;
+}
+.nav-links{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links a{
+    color: white;
+
+}
+.nav-links li::after {
+    content: '';
+    display: block;
+    background-color: var(--Primary);
+    height: 2px;
+    transform: scaleX(0);
+    transition: transform 300ms;
+}
+.nav-links li:hover::after {
+    transform: scaleX(1);
+
+}
